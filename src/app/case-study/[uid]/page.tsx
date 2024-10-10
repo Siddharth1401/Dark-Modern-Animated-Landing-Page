@@ -25,14 +25,14 @@ export default async function Page({ params }: { params: Params }) {
       <div className="relative grid place-items-center text-center">
         <StarGrid />
         <h1 className="text-7xl font-medium">
-          <PrismicText field={page.data.company} />
+          <PrismicText field={page.data.title} />
           <p className="text-lg text-yellow-500">Case Study</p>
         </h1>
         <p className="mb-4 mt-8 max-w-xl text-lg text-slate-300">
-          <PrismicText field={page.data.description} />
+          <PrismicText field={page.data.title} />
         </p>
         <PrismicNextImage
-          field={page.data.logo_image}
+          field={page.data.meta_image}
           className="rounded-lg"
           quality={100}
         />
